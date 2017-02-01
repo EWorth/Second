@@ -1,0 +1,20 @@
+body
+{
+	background-color:green;
+	size:18pt;
+	color:white;
+}
+
+table
+{
+	background-color:white;
+	width:25%;
+	font-size:18pt;
+	text-align:center;
+	color:blue;
+}
+
+a
+{
+		text-decoration:none;
+}
