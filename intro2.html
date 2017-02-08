@@ -1,5 +1,19 @@
 <html>
-<head><title>Intro3</title>
+<head><title>Intro2</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+
 <link rel="stylesheet" href="HWintro.css">
 </head>
 <body>
@@ -14,8 +28,10 @@
 <br>
 <br>
 
-Unlike msot students inthe class, I actually left a career to attend school and get a degreee however the life of being an addult and in college doesnt lead to too much time to enjoy hobbies. However witht hat aside i listed below in no particular order some of my hobbies and interests.<br>
+<p>Unlike most students in the class, I actually left a career to attend school and get a degreee however the life of being an adult and in college doesnt lead to too much time to enjoy hobbies. However with that aside I listed below in no particular order some of my hobbies and interests.</p><br>
 <br>
+<button id="hide">Click me to hide paragraph</button>
+<button id="show">Click to to show it again</button>
 
 
 <ol>

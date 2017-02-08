@@ -1,8 +1,24 @@
 
 <html>
 <head><title>Intro3</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeToggle("slow");
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle("slow");
+    });
+});
+</script>
+
+
+
+
 
 <link rel="stylesheet" href="HWintro.css">
+
 
 </head>
 
@@ -22,7 +38,7 @@
 
 <br>
 <br>
-	Skills I suppose are hard to define. Pace offeres a variety but the breadth and depth is not there, everything else needs to be done on personal time, most of that is fine, if I didn't also need to work. So my skills are very basic and I feel like Pace isn't offereing the best service in the way of "Must Know" when it comes to what will be used in the real world. Anyway here are a list of skills I have aquired and somewhat have forgotten because of lack of use (I actually copied most of these pages from my digital media class) since I've be Pace:
+	<p>Skills I suppose are hard to define. Pace offeres a variety but the breadth and depth is not there, everything else needs to be done on personal time, most of that is fine, if I didn't also need to work. So my skills are very basic and I feel like Pace isn't offereing the best service in the way of "Must Know" when it comes to what will be used in the real world. Anyway here are a list of skills I have aquired and somewhat have forgotten because of lack of use (I actually copied most of these pages from my digital media class) since I've be Pace:</p>
 <br>
  
 <br>
@@ -32,6 +48,17 @@
 <li>HTML and CSS</li>
 <li>FTK and Blacklight</li>
 </ul>
+
+<button>Click to fade in/out some colors</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:orange;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+
+
 
 
 </body>
