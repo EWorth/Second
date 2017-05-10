@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @project.title %>
+</p>
+
+<p>
+  <strong>Data received:</strong>
+  <%= @project.data_received %>
+</p>
+
+<p>
+  <strong>Date due:</strong>
+  <%= @project.date_due %>
+</p>
+
+<p>
+  <strong>Words to be read:</strong>
+  <%= @project.words_to_be_read %>
+</p>
+
+<p>
+  <strong>Words to be typed:</strong>
+  <%= @project.words_to_be_typed %>
+</p>
+
+<p>
+  <strong>Users words read per min:</strong>
+  <%= @project.users_words_read_per_min %>
+</p>
+
+<p>
+  <strong>Users words typed per min:</strong>
+  <%= @project.users_words_typed_per_min %>
+</p>
+
+<p>
+  <strong>Total estimate:</strong>
+  <%= @project.total_estimate %>
+</p>
+
+<h2>Person</h2>
+<% @project.person.each do |comment| %>
+  <p>
+    <strong>Commenter:</strong>
+    <%= person.commenter %>
+  </p>
+ 
+  <p>
+    <strong>Comment:</strong>
+    <%= person.body %>
+  </p>
+<% end %>
+
+<h2>Add a Person:</h2>
+<%= form_for([@project, @project.person.build]) do |f| %>
+  <p>
+    <%= f.label :commenter %><br>
+    <%= f.text_field :commenter %>
+  </p>
+  <p>
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

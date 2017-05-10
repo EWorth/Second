@@ -1,0 +1,57 @@
+<%= form_for(project) do |f| %>
+  <% if project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% project.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :data_received %>
+    <%= f.date_select :data_received %>
+  </div>
+
+  <div class="field">
+    <%= f.label :date_due %>
+    <%= f.date_select :date_due %>
+  </div>
+
+  <div class="field">
+    <%= f.label :words_to_be_read %>
+    <%= f.number_field :words_to_be_read %>
+  </div>
+
+  <div class="field">
+    <%= f.label :words_to_be_typed %>
+    <%= f.number_field :words_to_be_typed %>
+  </div>
+
+  <div class="field">
+    <%= f.label :users_words_read_per_min %>
+    <%= f.number_field :users_words_read_per_min %>
+  </div>
+
+  <div class="field">
+    <%= f.label :users_words_typed_per_min %>
+    <%= f.number_field :users_words_typed_per_min %>
+  </div>
+
+  <div class="field">
+    <%= f.label :total_estimate %>
+    <%= f.number_field :total_estimate %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

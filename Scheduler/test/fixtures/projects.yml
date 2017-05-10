@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  data_received: 2017-05-02
+  date_due: 2017-05-02
+  words_to_be_read: 1
+  words_to_be_typed: 1
+  users_words_read_per_min: 1
+  users_words_typed_per_min: 1
+  total_estimate: 1
+
+two:
+  title: MyString
+  data_received: 2017-05-02
+  date_due: 2017-05-02
+  words_to_be_read: 1
+  words_to_be_typed: 1
+  users_words_read_per_min: 1
+  users_words_typed_per_min: 1
+  total_estimate: 1
